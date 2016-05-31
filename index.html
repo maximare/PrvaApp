@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Prva aplikacija
+</title>
+</head>
+<body>
+<button id="dugme">Klik</button>
+<div id="results"></div>
+
+<script src="js/zepto.js"></script>
+<script src="js/silly.js"></script>
+<script>
+$('#dugme').click(function() {
+SILLY.DoIt($('#results'));
+var dugme = true;
+}
+)
+$('#dugme').click(function() {
+if(dugme){
+$('#results').html('');
+var dugme = false;
+}
+}
+
+)
+</script>
+</body>
+
+</html>
